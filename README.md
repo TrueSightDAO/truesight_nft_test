@@ -108,7 +108,13 @@ Example on how to create your own Candy Machine Page
     -k /Users/garyjob/.config/solana/id.json
   ```
 
--  Address the NFT was minted at
+- Creating the Candy Machine UI
+  ```
+  
+  ```
+
+
+-  Address the NFT was minted at on the Dev Net
   ```
   HLm7viNY3jZzSd49Rb74Lu9eP1geaGJqsg1bTFnJ6i2a
   ```
