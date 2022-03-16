@@ -9,6 +9,9 @@ Example on how to create your own Candy Machine Page
   - Solana CLI
   - NodeJS: v14.7.5
 
+- Install NodeJS -  https://github.com/garyjob/Setup-Wiki/blob/master/nodejs
+
+
 - Install ts-node
   ```
   npm install -g ts-node
