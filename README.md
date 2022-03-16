@@ -46,7 +46,7 @@ Example on how to create your own Candy Machine Page
       "price": 1.5,
       "number": 1500,
       "gatekeeper": null,
-      "solTreasuryAccount": "7fHHgY6Rpx63ancGYJKUgtQ6JdzQ3SuLj991KvqHmZu5",
+      "solTreasuryAccount": "<<YOUR WALLET ADDRESS>>",
       "splTokenAccount": null,
       "splToken": null,
       "goLiveDate": "25 Dec 2021 00:00:00 GMT",
@@ -87,7 +87,7 @@ Example on how to create your own Candy Machine Page
 
 - Uploading the NFT - https://docs.metaplex.com/candy-machine-v2/creating-candy-machine
   ```
-  ts-node /Users/garyjob/Applications/solana_projects/metaplex/js/packages/cli/src/candy-machine-v2-cli.ts upload \
+  ts-node /Users/garyjob/Applications/truesight_nfts/metaplex/js/packages/cli/src/candy-machine-v2-cli.ts upload \
     -e devnet \
     -k /Users/garyjob/.config/solana/id.json \
     -cp config.json \
@@ -96,26 +96,39 @@ Example on how to create your own Candy Machine Page
 
 - Verifying that NFT was Uploaded the NFT - https://docs.metaplex.com/candy-machine-v2/creating-candy-machine
   ```
-  ts-node /Users/garyjob/Applications/solana_projects/metaplex/js/packages/cli/src/candy-machine-v2-cli.ts verify_upload \
+  ts-node /Users/garyjob/Applications/truesight_nfts/metaplex/js/packages/cli/src/candy-machine-v2-cli.ts verify_upload \
     -e devnet \
     -k /Users/garyjob/.config/solana/id.json
   ```
 
 - Minting One Token - https://docs.metaplex.com/candy-machine-v2/creating-candy-machine
   ```
-  ts-node /Users/garyjob/Applications/solana_projects/metaplex/js/packages/cli/src/candy-machine-v2-cli.ts mint_one_token \
+  ts-node /Users/garyjob/Applications/truesight_nfts/metaplex/js/packages/cli/src/candy-machine-v2-cli.ts mint_one_token \
     -e devnet \
     -k /Users/garyjob/.config/solana/id.json
   ```
 
 - Creating the Candy Machine UI
+  - configuration in the metaplex repository
+    ```
+    cd js/packages/candy-machine-ui
+    mv .env.example .env.example
+
+    # Replace the line in this file to 
+    REACT_APP_CANDY_MACHINE_ID=<YOUR CANDY MACHINE PROGRAM ID>
+
+    # Replace the line in this file to 
+    REACT_APP_CANDY_MACHINE_ID=3oH7gZ1DK7i9RJG91sfyB5829x6g84Mim4jabjf4F2mg    
+    ```
+
+- Resetting the project
   ```
-  
+  rm -rf .cache
   ```
 
 
 -  Address the NFT was minted at on the Dev Net
   ```
-  HLm7viNY3jZzSd49Rb74Lu9eP1geaGJqsg1bTFnJ6i2a
+  3oH7gZ1DK7i9RJG91sfyB5829x6g84Mim4jabjf4F2mg
   ```
 
