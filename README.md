@@ -87,11 +87,26 @@ Example on how to create your own Candy Machine Page
 
 - Uploading the NFT - https://docs.metaplex.com/candy-machine-v2/creating-candy-machine
   ```
-  # metaplex upload ./assets --env devnet --keypair /Users/garyjob/.config/solana/id.json --log-level trace --number 4
-
   ts-node /Users/garyjob/Applications/solana_projects/metaplex/js/packages/cli/src/candy-machine-v2-cli.ts upload \
     -e devnet \
     -k /Users/garyjob/.config/solana/id.json \
     -cp config.json \
     /Users/garyjob/Applications/truesight_nfts/assets
+  ```
+
+- Verifying that NFT was Uploaded the NFT - https://docs.metaplex.com/candy-machine-v2/creating-candy-machine
+  ```
+  ts-node /Users/garyjob/Applications/solana_projects/metaplex/js/packages/cli/src/candy-machine-v2-cli.ts verify_upload \
+    -e devnet \
+    -k /Users/garyjob/.config/solana/id.json
+  ```
+
+-  Address the NFT was minted at
+  ```
+  HLm7viNY3jZzSd49Rb74Lu9eP1geaGJqsg1bTFnJ6i2a
+  ```
+
+  Address the NFT was minted at
+  ```
+  HLm7viNY3jZzSd49Rb74Lu9eP1geaGJqsg1bTFnJ6i2a
   ```
