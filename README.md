@@ -105,8 +105,3 @@ Example on how to create your own Candy Machine Page
   ```
   HLm7viNY3jZzSd49Rb74Lu9eP1geaGJqsg1bTFnJ6i2a
   ```
-
-  Address the NFT was minted at
-  ```
-  HLm7viNY3jZzSd49Rb74Lu9eP1geaGJqsg1bTFnJ6i2a
-  ```
