@@ -101,9 +101,15 @@ Example on how to create your own Candy Machine Page
     -k /Users/garyjob/.config/solana/id.json
   ```
 
+- Minting One Token - https://docs.metaplex.com/candy-machine-v2/creating-candy-machine
+  ```
+  ts-node /Users/garyjob/Applications/solana_projects/metaplex/js/packages/cli/src/candy-machine-v2-cli.ts mint_one_token \
+    -e devnet \
+    -k /Users/garyjob/.config/solana/id.json
+  ```
+
 -  Address the NFT was minted at
   ```
   HLm7viNY3jZzSd49Rb74Lu9eP1geaGJqsg1bTFnJ6i2a
   ```
 
-  
