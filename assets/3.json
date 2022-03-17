@@ -1,7 +1,7 @@
 {
-    "name": "Number #0001",
+    "name": "Number #0004",
     "symbol": "NB",
-    "description": "Collection of 1 numbers on the blockchain. This is the number 1/5.",
+    "description": "Collection of 5 numbers on the blockchain. This is the number 4/5.",
     "seller_fee_basis_points": 500,
     "image": "0.png",
     "attributes": [

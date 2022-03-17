@@ -87,23 +87,23 @@ Example on how to create your own Candy Machine Page
 
 - Uploading the NFT - https://docs.metaplex.com/candy-machine-v2/creating-candy-machine
   ```
-  ts-node /Users/garyjob/Applications/truesight_nfts/metaplex/js/packages/cli/src/candy-machine-v2-cli.ts upload \
+  ts-node /Users/garyjob/Applications/solana_projects/metaplex/js/packages/cli/src/candy-machine-v2-cli.ts upload \
     -e devnet \
     -k /Users/garyjob/.config/solana/id.json \
     -cp config.json \
-    /Users/garyjob/Applications/truesight_nfts/assets
+    /Users/garyjob/Applications/truesight_nft_test/assets
   ```
 
 - Verifying that NFT was Uploaded the NFT - https://docs.metaplex.com/candy-machine-v2/creating-candy-machine
   ```
-  ts-node /Users/garyjob/Applications/truesight_nfts/metaplex/js/packages/cli/src/candy-machine-v2-cli.ts verify_upload \
+  ts-node /Users/garyjob/Applications/solana_projects/metaplex/js/packages/cli/src/candy-machine-v2-cli.ts verify_upload \
     -e devnet \
     -k /Users/garyjob/.config/solana/id.json
   ```
 
 - Minting One Token - https://docs.metaplex.com/candy-machine-v2/creating-candy-machine
   ```
-  ts-node /Users/garyjob/Applications/truesight_nfts/metaplex/js/packages/cli/src/candy-machine-v2-cli.ts mint_one_token \
+  ts-node /Users/garyjob/Applications/solana_projects/metaplex/js/packages/cli/src/candy-machine-v2-cli.ts mint_one_token \
     -e devnet \
     -k /Users/garyjob/.config/solana/id.json
   ```
@@ -111,8 +111,11 @@ Example on how to create your own Candy Machine Page
 - Creating the Candy Machine UI
   - configuration in the metaplex repository
     ```
-    cd js/packages/candy-machine-ui
-    mv .env.example .env.example
+    # cd js/packages/candy-machine-ui
+    # mv .env.example .env
+
+    cd candy-machine-ui
+    vim .env
 
     # Replace the line in this file to 
     REACT_APP_CANDY_MACHINE_ID=<YOUR CANDY MACHINE PROGRAM ID>
